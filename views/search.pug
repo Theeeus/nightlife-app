@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title React App
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel='stylesheet', href='/css/style.css')
+    script(src="https://use.fontawesome.com/a23e082358.js")
+  body
+    script.
+      var data = '!{data}';
+      var auth = '!{auth}';
+      var user = '!{user}';
+    - if (!auth) {
+      .navbarInner
+        .navbarLeft.pull-left
+          a.logo(href='/')
+            img(src='/assets/nightlife-icon.png')
+            span.hidden-xs REMEMBAR
+        .navbarRight.pull-right.nrInner
+          a.btn.btn-primary(href='/auth/facebook')
+            i.fa.fa-facebook
+            span.hidden-xs Sign in with Facebook
+    - } else {
+      #navbarAuth.navbarInner
+        .navbarLeft.pull-left
+          a.logo(href='/')
+            img(src='/assets/nightlife-icon.png')
+            | REMEMBAR
+        .navbarRight.pull-right
+          a.btn.btn-danger.logoutBtn(href='/logout') Logout
+    - }
+    <form class="searchBarInner" action="/search" method="post">
+      <input class="searchInputInner" type="text" name="query" placeholder="Search by city name..." />
+      <input class="searchSubmitInner btn btn-primary" type="submit" value="SEARCH" />
+    </form>
+    #app
+    script(type='text/javascript', src='/build/bundle.js')

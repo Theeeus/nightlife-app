@@ -1,0 +1,39 @@
+doctype html
+html
+  head
+    title Never forget an indication again | RememBAR
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel='stylesheet', href='/css/style.css')
+    script(src="https://use.fontawesome.com/a23e082358.js")
+  body
+    script.
+      var auth = '!{auth}';
+    .jumbotron  
+      - if (!auth) {
+      .navbar
+        .navbarLeft.pull-left
+          p
+            img(src='/assets/nightlife-icon.png')
+            span.hidden-xs REMEMBAR
+        .navbarRight.pull-right
+          a.btn.btn-primary(href='/auth/facebook')
+            i.fa.fa-facebook
+            span.hidden-xs Sign in with Facebook
+      - } else {
+      #navbarAuth.navbar
+        .navbarLeft.pull-left
+          a.logo(href='/')
+            img(src='/assets/nightlife-icon.png')
+            | REMEMBAR
+        .navbarRight.pull-right
+          a.btn.btn-danger.logoutBtn(href='/logout') Logout
+      - }
+      .intro
+        <h1 class="introHeadline">Make the most of your next trip</h1>
+        <p class="introTxt">Heard of a good bar in another city? Save it on our list so you can remember it next time you go there</p>
+        <form class="searchBar" action="/search" method="post">
+          .inputBg
+            <input class="searchInput" type="text" name="query" placeholder="Search by city name..."/>
+          <input class="btn btn-default searchSubmit" type="submit" value="SEARCH" />
+        </form>
+      script(type='text/javascript', src='/build/bundle.js')
