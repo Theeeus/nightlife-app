@@ -6,6 +6,8 @@ module.exports = {
 		app: "./public/app/App.js"
 	},
 	output: {
+		path: __dirname,
+	    publicPath: '/',
 		filename:"public/build/bundle.js",
         sourceMapFilename: "public/build/bundle.map"
 	},
