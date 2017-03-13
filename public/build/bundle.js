@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 179);
@@ -9487,9 +9487,8 @@ var List = _react2.default.createClass({
 							_react2.default.createElement(
 								"p",
 								{ className: "barReservations" },
-								"Saved by ",
 								listValue.going,
-								" people"
+								" saves"
 							),
 							this.props.auth == 'false' ? _react2.default.createElement(
 								"a",

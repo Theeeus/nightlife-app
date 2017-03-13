@@ -18,7 +18,7 @@ var List = React.createClass({
 					<div className="barInfo">
 						<div className="title">
 							<a className="barName" href={listValue.url} target="_blank">{listValue.name}</a>
-							<p className="barReservations">Saved by {listValue.going} people</p>
+							<p className="barReservations">{listValue.going} saves</p>
 							{ this.props.auth == 'false' ?
 							<a className="goBtn2 btn btn-warning" href='/auth/facebook'>Save Bar</a> :
 							listValue.enrolled.indexOf(this.props.user) !== -1 ?

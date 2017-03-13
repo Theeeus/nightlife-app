@@ -264,6 +264,49 @@ i {
   display: block;
 }
 
+@media (max-width: 768px) 
+{
+
+/* A media query da galeraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.barImg {
+  width: 80px;
+  height: 80px;
+}
+
+.barName, .barReservations, .goBtn, .goBtn2, .goingBtn {
+  display: block !important;
+}
+
+.barReservations {
+  font-size: 14px;
+  line-height: 15px;
+  text-align: left;
+  border: none;
+}
+
+.goBtn {
+  height: 30px; 
+/*  margin: -30px 20px 0 0; */
+  background-color: #8643c4;
+  border-color: #8643c4;
+}
+
+.goBtn2 {
+  height: 30px;
+  margin-left: 200px; 
+  background-color: #8643c4;
+  border-color: #8643c4;
+  opacity:0.4;
+}
+
+.goingBtn {
+  height: 30px; 
+/*  margin: -30px 20px 0 0; */
+}
+
+}
+
 .blankResults {
   display: block;
   height: 500px;
@@ -351,40 +394,52 @@ i {
   margin-top: 12px;
 }
 
-.barName {
+.barImg {
+  width: 80px;
+  height: 80px;
+}
+
+.barName, .barReservations, .goBtn, .goBtn2, .goingBtn {
   display: block;
+}
+
+.title {
+  position: relative;
+}
+
+.barName {
+  font-size: 20px;
+  line-height: 22px;
+  height: 44px;
 }
 
 .barReservations {
-  display: block;
-  line-height: 30px;
-}
-
-.barRating {
-  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  border: none;
+  margin: 0;
 }
 
 .goBtn {
-  display: block;
-  float: none;
-  
-  margin-left: 120px;
-  width: 80px;
+  height: 30px; 
+/*  margin: -30px 20px 0 0; */
+  background-color: #8643c4;
+  border-color: #8643c4;
 }
 
 .goBtn2 {
-  display: block;
-  float: none; 
-  margin-top: -6px; 
-  margin-left: 120px;
-  width: 80px;
+  height: 30px;
+  background-color: #8643c4;
+  border-color: #8643c4;
+  opacity:0.4;
+  margin-left: 100px;
+  float: none;
 }
 
 .goingBtn {
-  display: block;
-  float: none; 
-  margin-left: 120px;
-  width: 80px;
+  height: 30px; 
+/*  margin: -30px 20px 0 0; */
 }
 
 
