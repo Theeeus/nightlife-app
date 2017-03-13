@@ -229,7 +229,7 @@ i {
   opacity:0.4;
 }
 
-.goBtn:hover, .goBtn:active, .goBtn:focus {
+.goBtn:hover, .goBtn:active, .goBtn:focus, .goBtn2:hover, .goBtn2:active, .goBtn2:focus  {
   background-color: #8643c4;
   border-color: #8643c4;
 }
@@ -253,7 +253,6 @@ i {
   color: #999;
   line-height: 20px;
   display: block;
-/*  margin-top: -5px; */
 }
 
 .barSnippet {
@@ -264,48 +263,6 @@ i {
   display: block;
 }
 
-@media (max-width: 768px) 
-{
-
-/* A media query da galeraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
-
-.barImg {
-  width: 80px;
-  height: 80px;
-}
-
-.barName, .barReservations, .goBtn, .goBtn2, .goingBtn {
-  display: block !important;
-}
-
-.barReservations {
-  font-size: 14px;
-  line-height: 15px;
-  text-align: left;
-  border: none;
-}
-
-.goBtn {
-  height: 30px; 
-/*  margin: -30px 20px 0 0; */
-  background-color: #8643c4;
-  border-color: #8643c4;
-}
-
-.goBtn2 {
-  height: 30px;
-  margin-left: 200px; 
-  background-color: #8643c4;
-  border-color: #8643c4;
-  opacity:0.4;
-}
-
-.goingBtn {
-  height: 30px; 
-/*  margin: -30px 20px 0 0; */
-}
-
-}
 
 .blankResults {
   display: block;
@@ -405,27 +362,35 @@ i {
 
 .title {
   position: relative;
+  min-height: 90px;
 }
 
 .barName {
   font-size: 20px;
   line-height: 22px;
-  height: 44px;
+  min-height: 22px;
 }
 
 .barReservations {
   font-size: 14px;
   line-height: 16px;
+  color: #999;
   text-align: left;
   border: none;
   margin: 0;
 }
 
-.goBtn, .goBtn2, .goingBtn {
+.goBtn, .goingBtn, .goBtn2 {
   margin-left: 100px;
   float: none;
 }
 
+.goBtn2 {
+  max-width: 100px;
+}
 
+.goBtn, .goingBtn {
+  margin-top: 0;
+}
 
 }
