@@ -421,26 +421,11 @@ i {
   margin: 0;
 }
 
-.goBtn {
-  height: 30px; 
-/*  margin: -30px 20px 0 0; */
-  background-color: #8643c4;
-  border-color: #8643c4;
-}
-
-.goBtn2 {
-  height: 30px;
-  background-color: #8643c4;
-  border-color: #8643c4;
-  opacity:0.4;
+.goBtn, .goBtn2, .goingBtn {
   margin-left: 100px;
   float: none;
 }
 
-.goingBtn {
-  height: 30px; 
-/*  margin: -30px 20px 0 0; */
-}
 
 
 }
