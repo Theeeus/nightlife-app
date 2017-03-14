@@ -65,7 +65,8 @@ app.get('/city/:query',function(req,res){
                 if (req.isAuthenticated()) {
                     user = req.user.id;
                 }
-                res.render('search', {data : updatedString, auth : req.isAuthenticated(), user : user });
+                res.render('search', {data : updatedString, auth : req.isAuthenticated(), user : user, city : data.businesses[0].location.city });
+                
             }
         }
         next();
