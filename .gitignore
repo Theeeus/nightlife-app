@@ -3,3 +3,5 @@ node_modules
 config/database.js
 config/auth.js
 config/yelp.js
+
+_outros
