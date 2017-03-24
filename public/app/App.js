@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SearchBar from './SearchBar';
 import List from './List';
+import Pagination from './Pagination';
 
 var App = React.createClass({
 
@@ -10,7 +10,8 @@ var App = React.createClass({
         return (
             <div>
                 <List data={window.data} auth={window.auth} user={window.user} />
-                <p className="text-center">Full Stack React</p>
+                <Pagination path={window.path} page={window.page} />
+                <div className="footer text-center">Full Stack React | <a href="https://github.com/Theeeus/nightlife-app" target="_blank">GitHub</a></div>
             </div>
         )
     }

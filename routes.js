@@ -11,7 +11,8 @@ app.get('/logout', function(req, res) {
 
 app.post('/search', function(req,res){ 
     var query = req.body.query;
-    res.redirect('/city/'+query);
+    var str = query.replace(/\s/g, "-");
+    res.redirect('/city/'+str);
 });
 
 app.post('/go', function(req,res){
@@ -32,6 +33,7 @@ app.post('/unenroll', function(req,res){
 
 app.get('/city/:query',function(req,res){
 	var query = req.params.query;
+    var str = '/city/'+query;
     yelp.search({ term: 'bar', location: query })
     .then(function (data) {
 		var arr = data.businesses;
@@ -65,7 +67,56 @@ app.get('/city/:query',function(req,res){
                 if (req.isAuthenticated()) {
                     user = req.user.id;
                 }
-                res.render('search', {data : updatedString, auth : req.isAuthenticated(), user : user, city : data.businesses[0].location.city });
+                res.render('search', {data : updatedString, auth : req.isAuthenticated(), user : user, city : data.businesses[0].location.city, path : str, page : '1' });
+                
+            }
+        }
+        next();
+    })
+    .catch(function (err) {
+    console.error(err);
+    });
+});
+
+app.get('/city/:query/:page',function(req,res){
+    var query = req.params.query;
+    var str = '/city/'+query;
+    var offset = (req.params.page * 20)-20;
+    var page = req.params.page;
+    yelp.search({ term: 'bar', location: query, offset : offset })
+    .then(function (data) {
+		var arr = data.businesses;
+        var newArr = [];
+        var i = -1;
+        var goingCount = null;
+        var enrolled = null;
+        var next = function() {
+            i++;
+            if (i < arr.length) {
+                var value = arr[i];
+                db.nightlifersvps.find({ barID : value.id }, function(err,bar){
+                    if (bar.length > 0) {
+                        goingCount = bar[0].going.length;
+                        enrolled = bar[0].going;
+
+                    } else {
+                        goingCount = 0;
+                        enrolled = [];
+                    }
+                    var obj = { image_url : value.image_url, url : value.url, name : value.name, id : value.id, rating : value.rating, rating_img_url : value.rating_img_url, review_count: value.review_count, address : value.location.address[0], snippet : value.snippet_text, going : goingCount, enrolled : enrolled};
+                    newArr[i] = obj;
+                    next();
+                });
+            } else {
+                var string = JSON.stringify(newArr);
+                var updatedString = string.replace(/'/g, "\\'");
+                var updatedString = updatedString.replace(/\n/g, "\\n");
+                var updatedString = updatedString.replace(/"/g, '\\"');
+                var user = '';
+                if (req.isAuthenticated()) {
+                    user = req.user.id;
+                }
+                res.render('search', {data : updatedString, auth : req.isAuthenticated(), user : user, city : data.businesses[0].location.city, path : str, page : page });
                 
             }
         }

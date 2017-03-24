@@ -16,18 +16,22 @@ html
     meta(property='og:site_name', content='remembar | bars in '+city)
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
     link(rel='stylesheet', href='/css/style.css')
+    link(href="https://fonts.googleapis.com/css?family=Permanent+Marker", rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Noto+Serif", rel="stylesheet")
     script(src="https://use.fontawesome.com/a23e082358.js")
   body
     script.
       var data = '!{data}';
       var auth = '!{auth}';
       var user = '!{user}';
+      var path = '!{path}';
+      var page = '!{page}';
     - if (!auth) {
       .navbarInner
         .navbarLeft.pull-left
           a.logo(href='/')
             img(src='/assets/nightlife-icon.png')
-            span.hidden-xs REMEMBAR
+            span.hidden-xs rememBAR
         .navbarRight.pull-right.nrInner
           a.btn.btn-primary(href='/auth/facebook')
             i.fa.fa-facebook
@@ -37,7 +41,7 @@ html
         .navbarLeft.pull-left
           a.logo(href='/')
             img(src='/assets/nightlife-icon.png')
-            | REMEMBAR
+            | rememBAR
         .navbarRight.pull-right
           a.btn.btn-danger.logoutBtn(href='/logout') Logout
     - }

@@ -9566,20 +9566,68 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var SearchBar = _react2.default.createClass({
-    displayName: "SearchBar",
+var Pagination = _react2.default.createClass({
+    displayName: "Pagination",
+
 
     render: function render() {
         return _react2.default.createElement(
-            "form",
-            { className: "searchBar", action: "/", method: "post" },
-            _react2.default.createElement("input", { className: "searchInput", type: "text", name: "query" }),
-            _react2.default.createElement("input", { className: "searchSubmit", type: "submit", value: "Go" })
+            "nav",
+            { "aria-label": "Page navigation", className: "offsetResults" },
+            _react2.default.createElement(
+                "ul",
+                { className: "pagination" },
+                _react2.default.createElement(
+                    "li",
+                    { className: this.props.page == '1' ? 'active' : '' },
+                    _react2.default.createElement(
+                        "a",
+                        { href: this.props.path + '/1' },
+                        "1"
+                    )
+                ),
+                _react2.default.createElement(
+                    "li",
+                    { className: this.props.page == '2' ? 'active' : '' },
+                    _react2.default.createElement(
+                        "a",
+                        { href: this.props.path + '/2' },
+                        "2"
+                    )
+                ),
+                _react2.default.createElement(
+                    "li",
+                    { className: this.props.page == '3' ? 'active' : '' },
+                    _react2.default.createElement(
+                        "a",
+                        { href: this.props.path + '/3' },
+                        "3"
+                    )
+                ),
+                _react2.default.createElement(
+                    "li",
+                    { className: this.props.page == '4' ? 'active' : '' },
+                    _react2.default.createElement(
+                        "a",
+                        { href: this.props.path + '/4' },
+                        "4"
+                    )
+                ),
+                _react2.default.createElement(
+                    "li",
+                    { className: this.props.page == '5' ? 'active' : '' },
+                    _react2.default.createElement(
+                        "a",
+                        { href: this.props.path + '/5' },
+                        "5"
+                    )
+                )
+            )
         );
     }
 });
 
-exports.default = SearchBar;
+exports.default = Pagination;
 
 /***/ }),
 /* 82 */
@@ -21836,13 +21884,13 @@ var _reactDom = __webpack_require__(82);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _SearchBar = __webpack_require__(81);
-
-var _SearchBar2 = _interopRequireDefault(_SearchBar);
-
 var _List = __webpack_require__(80);
 
 var _List2 = _interopRequireDefault(_List);
+
+var _Pagination = __webpack_require__(81);
+
+var _Pagination2 = _interopRequireDefault(_Pagination);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21856,10 +21904,16 @@ var App = _react2.default.createClass({
             'div',
             null,
             _react2.default.createElement(_List2.default, { data: window.data, auth: window.auth, user: window.user }),
+            _react2.default.createElement(_Pagination2.default, { path: window.path, page: window.page }),
             _react2.default.createElement(
-                'p',
-                { className: 'text-center' },
-                'Full Stack React'
+                'div',
+                { className: 'footer text-center' },
+                'Full Stack React | ',
+                _react2.default.createElement(
+                    'a',
+                    { href: 'https://github.com/Theeeus/nightlife-app', target: '_blank' },
+                    'GitHub'
+                )
             )
         );
     }
