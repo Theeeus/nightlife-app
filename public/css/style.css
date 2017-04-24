@@ -5,7 +5,7 @@ body {
 }
 
 .jumbotron {
-  background: url('https://www.iwantbeerrightnow.com/blog/wp-content/uploads/2016/04/image2.jpg') no-repeat center center fixed;
+  background: url('/assets/background.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -87,7 +87,7 @@ i {
 
 .introHeadline, .introTxt {
   color: #fff !important;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.5); 
   display: inline-block;
   padding: 0 10px;
 }
