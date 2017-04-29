@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://remembar.herokuapp.com/</loc>
+  <lastmod>2017-04-29</lastmod>
+  <priority>1.0</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/london</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/manchester</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/paris</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/new-york</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/las-vegas</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/los-angeles</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/miami</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/singapore</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/Kuala-Lumpur</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/istambul</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/tokyo</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/hong-kong</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/Barcelona</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/madrid</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/amsterdam</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/Brussels</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/milan</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/taipei</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/rome</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/osaka</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/Vienna</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/Shanghai</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/Prague</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/Montreal</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/Torono</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/Sao-Paulo</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/Rio-de-Janeiro</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://remembar.herokuapp.com/city/Buenos-Aires</loc>
+	<lastmod>2017-04-29</lastmod>
+	<priority>0.8</priority>
+</url>
+</urlset>
