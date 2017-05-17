@@ -36,6 +36,9 @@ app.get('/city/:query',function(req,res){
     var str = '/city/'+query;
     yelp.search({ term: 'bar', location: query })
     .then(function (data) {
+        if (!data) {
+            console.log('place not supported');
+        }
 		var arr = data.businesses;
         var newArr = [];
         var i = -1;
